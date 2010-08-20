@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade">
+	<name>JoomlaPack</name>
+	<creationDate>2010-01-16</creationDate>
+	<author>JoomlaPack Developers</author>
+	<authorEmail>contact@joomlapack.net</authorEmail>
+	<authorUrl>http://www.joomlapack.net</authorUrl>
+	<copyright>Copyright (c)2006-2008 JoomlaPack Developers</copyright>
+	<license>This component in released under the GNU/GPL v2 or later license</license>
+	<version>2.4.1</version>
+	<description>
+		JoomlaPack 2.4.1
+	</description>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="frontend">
+				<filename>joomlapack.php</filename>
+		<filename>controllers/backup.php</filename>
+		<filename>controllers/json.php</filename>
+		<filename>controllers/light.php</filename>
+		<filename>models/light.php</filename>
+		<filename>views/backup/view.raw.php</filename>
+		<filename>views/backup/tmpl/default.php</filename>
+		<filename>views/backup/tmpl/default_raw.php</filename>
+		<filename>views/json/view.raw.php</filename>
+		<filename>views/json/tmpl/default_raw.php</filename>
+		<filename>views/light/view.html.php</filename>
+		<filename>views/light/view.raw.php</filename>
+		<filename>views/light/tmpl/default.php</filename>
+		<filename>views/light/tmpl/default_done.php</filename>
+		<filename>views/light/tmpl/default_error.php</filename>
+		<filename>views/light/tmpl/default_step.php</filename>
+
+	</files>
+
+	<languages folder="translations/frontend">
+				<language tag="de-DE">de-DE.com_joomlapack.ini</language>
+		<language tag="el-GR">el-GR.com_joomlapack.ini</language>
+		<language tag="en-GB">en-GB.com_joomlapack.ini</language>
+		<language tag="es-ES">es-ES.com_joomlapack.ini</language>
+		<language tag="fr-FR">fr-FR.com_joomlapack.ini</language>
+		<language tag="it-IT">it-IT.com_joomlapack.ini</language>
+		<language tag="nb-NO">nb-NO.com_joomlapack.ini</language>
+		<language tag="nl-NL">nl-NL.com_joomlapack.ini</language>
+		<language tag="ro-RO">ro-RO.com_joomlapack.ini</language>
+		<language tag="ru-RU">ru-RU.com_joomlapack.ini</language>
+		<language tag="sv-SE">sv-SE.com_joomlapack.ini</language>
+		<language tag="tr-TR">tr-TR.com_joomlapack.ini</language>
+		<language tag="uk-UA">uk-UA.com_joomlapack.ini</language>
+
+	</languages>
+
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+			<file driver="mysql">install.mysql4.sql</file>
+			<file charset="utf8" driver="mysqli">install.sql</file>
+			<file driver="mysqli">install.mysql4.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+			<file driver="mysql">uninstall.sql</file>
+			<file charset="utf8" driver="mysqli">uninstall.sql</file>
+			<file driver="mysqli">uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- Administrator section -->
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu view="cpanel"
+			img="components/com_joomlapack/assets/images/joomlapack-16.png">JoomlaPack</menu>
+		<submenu>
+			<menu view="backup"
+				img="components/com_joomlapack/assets/images/backup-16.png">BACKUP_NOW</menu>
+			<menu view="config"
+				img="components/com_joomlapack/assets/images/config-16.png">CONFIGURATION</menu>
+			<menu view="buadmin"
+				img="components/com_joomlapack/assets/images/bufa-16.png">ADMINISTER_BACKUP_FILES</menu>
+		</submenu>
+
+		<!-- Administration Main File Copy Section -->
+		<files folder="backend">
+					<filename>admin.joomlapack.php</filename>
+		<filename>install.mysql4.sql</filename>
+		<filename>install.sql</filename>
+		<filename>uninstall.sql</filename>
+		<filename>version.php</filename>
+		<filename>assets/css/browser.css</filename>
+		<filename>assets/css/joomlapack.css</filename>
+		<filename>assets/css/mod_jpadmin.css</filename>
+		<filename>assets/images/arrow_small.png</filename>
+		<filename>assets/images/backup-16.png</filename>
+		<filename>assets/images/backup.png</filename>
+		<filename>assets/images/bufa-16.png</filename>
+		<filename>assets/images/bufa.png</filename>
+		<filename>assets/images/config-16.png</filename>
+		<filename>assets/images/config.png</filename>
+		<filename>assets/images/cronman.png</filename>
+		<filename>assets/images/db.png</filename>
+		<filename>assets/images/dbef.png</filename>
+		<filename>assets/images/def.png</filename>
+		<filename>assets/images/delete.png</filename>
+		<filename>assets/images/dif.png</filename>
+		<filename>assets/images/download.png</filename>
+		<filename>assets/images/error_big.png</filename>
+		<filename>assets/images/error_small.png</filename>
+		<filename>assets/images/export.png</filename>
+		<filename>assets/images/extfilter.png</filename>
+		<filename>assets/images/full.png</filename>
+		<filename>assets/images/home.png</filename>
+		<filename>assets/images/import.png</filename>
+		<filename>assets/images/joomlapack-16.png</filename>
+		<filename>assets/images/joomlapack-48.png</filename>
+		<filename>assets/images/joomlapack-warning-48.png</filename>
+		<filename>assets/images/log.png</filename>
+		<filename>assets/images/multidb.png</filename>
+		<filename>assets/images/ok_big.png</filename>
+		<filename>assets/images/ok_small.png</filename>
+		<filename>assets/images/profiles.png</filename>
+		<filename>assets/images/reset.png</filename>
+		<filename>assets/images/sff.png</filename>
+		<filename>assets/installers/jpi2.ini</filename>
+		<filename>assets/installers/jpi2.jpa</filename>
+		<filename>assets/installers/jpi3.ini</filename>
+		<filename>assets/installers/jpi3.jpa</filename>
+		<filename>assets/installers/jpi4.ini</filename>
+		<filename>assets/installers/jpi4.jpa</filename>
+		<filename>assets/scripts/croninclude.php</filename>
+		<filename>assets/scripts/datarestore.jpa</filename>
+		<filename>assets/scripts/kickstart.jpa</filename>
+		<filename>backup/.htaccess</filename>
+		<filename>backup/index.htm</filename>
+		<filename>classes/factory.php</filename>
+		<filename>classes/abstract/enginearchiver.php</filename>
+		<filename>classes/abstract/enginelister.php</filename>
+		<filename>classes/abstract/engineparts.php</filename>
+		<filename>classes/abstract/filter.php</filename>
+		<filename>classes/core/cube.php</filename>
+		<filename>classes/core/domain/dbbackup.php</filename>
+		<filename>classes/core/domain/index.htm</filename>
+		<filename>classes/core/domain/installer.php</filename>
+		<filename>classes/core/domain/pack.php</filename>
+		<filename>classes/core/utility/algorunner.php</filename>
+		<filename>classes/core/utility/filtermanager.php</filename>
+		<filename>classes/core/utility/index.htm</filename>
+		<filename>classes/core/utility/logger.php</filename>
+		<filename>classes/core/utility/provisioning.php</filename>
+		<filename>classes/core/utility/tables.php</filename>
+		<filename>classes/core/utility/tempfiles.php</filename>
+		<filename>classes/engine/dumper/default.ini</filename>
+		<filename>classes/engine/dumper/default.php</filename>
+		<filename>classes/engine/dumper/mysql-new.ini</filename>
+		<filename>classes/engine/dumper/mysql-new.php</filename>
+		<filename>classes/engine/dumper/mysqldump.ini</filename>
+		<filename>classes/engine/dumper/mysqldump.php</filename>
+		<filename>classes/engine/lister/default.ini</filename>
+		<filename>classes/engine/lister/default.php</filename>
+		<filename>classes/engine/lister/joomla.ini</filename>
+		<filename>classes/engine/lister/joomla.php</filename>
+		<filename>classes/engine/lister/smart.ini</filename>
+		<filename>classes/engine/lister/smart.php</filename>
+		<filename>classes/engine/packer/directftp.ini</filename>
+		<filename>classes/engine/packer/directftp.php</filename>
+		<filename>classes/engine/packer/jpa.ini</filename>
+		<filename>classes/engine/packer/jpa.php</filename>
+		<filename>classes/engine/packer/null.ini</filename>
+		<filename>classes/engine/packer/null.php</filename>
+		<filename>classes/engine/packer/tar.ini</filename>
+		<filename>classes/engine/packer/tar.php</filename>
+		<filename>classes/engine/packer/targz.ini</filename>
+		<filename>classes/engine/packer/targz.php</filename>
+		<filename>classes/engine/packer/zip.ini</filename>
+		<filename>classes/engine/packer/zip.php</filename>
+		<filename>classes/filter/dbef.ini</filename>
+		<filename>classes/filter/dbef.php</filename>
+		<filename>classes/filter/def.ini</filename>
+		<filename>classes/filter/def.php</filename>
+		<filename>classes/filter/sff.ini</filename>
+		<filename>classes/filter/sff.php</filename>
+		<filename>classes/filter/skipdirs.ini</filename>
+		<filename>classes/filter/skipdirs.php</filename>
+		<filename>classes/filter/skipfiles.ini</filename>
+		<filename>classes/filter/skipfiles.php</filename>
+		<filename>classes/misc/Archive_Tar.php</filename>
+		<filename>classes/misc/cryptography.php</filename>
+		<filename>classes/misc/unarchiverparent.php</filename>
+		<filename>classes/misc/unjpa.php</filename>
+		<filename>classes/misc/unzip.php</filename>
+		<filename>controllers/backup.php</filename>
+		<filename>controllers/browser.php</filename>
+		<filename>controllers/buadmin.php</filename>
+		<filename>controllers/config.php</filename>
+		<filename>controllers/configeasy.php</filename>
+		<filename>controllers/cpanel.php</filename>
+		<filename>controllers/cronman.php</filename>
+		<filename>controllers/dbef.php</filename>
+		<filename>controllers/def.php</filename>
+		<filename>controllers/eff.php</filename>
+		<filename>controllers/extfilter.php</filename>
+		<filename>controllers/filtercontrollerparent.php</filename>
+		<filename>controllers/log.php</filename>
+		<filename>controllers/multidb.php</filename>
+		<filename>controllers/multirestore.php</filename>
+		<filename>controllers/nag.php</filename>
+		<filename>controllers/profiles.php</filename>
+		<filename>controllers/sff.php</filename>
+		<filename>controllers/skip.php</filename>
+		<filename>controllers/statistics.php</filename>
+		<filename>controllers/switch.php</filename>
+		<filename>controllers/update.php</filename>
+		<filename>help/en-GB/nonav.css</filename>
+		<filename>helpers/backup.php</filename>
+		<filename>helpers/config.php</filename>
+		<filename>helpers/dbef.php</filename>
+		<filename>helpers/def.php</filename>
+		<filename>helpers/log.php</filename>
+		<filename>helpers/sajax.php</filename>
+		<filename>helpers/sff.php</filename>
+		<filename>helpers/skip.php</filename>
+		<filename>helpers/status.php</filename>
+		<filename>helpers/utils.php</filename>
+		<filename>models/backup.php</filename>
+		<filename>models/buadmin.php</filename>
+		<filename>models/config.php</filename>
+		<filename>models/configeasy.php</filename>
+		<filename>models/cpanel.php</filename>
+		<filename>models/cronman.php</filename>
+		<filename>models/dbef.php</filename>
+		<filename>models/def.php</filename>
+		<filename>models/eff.php</filename>
+		<filename>models/extfilter.php</filename>
+		<filename>models/filtermodelparent.php</filename>
+		<filename>models/log.php</filename>
+		<filename>models/multidb.php</filename>
+		<filename>models/multirestore.php</filename>
+		<filename>models/profiles.php</filename>
+		<filename>models/registry.php</filename>
+		<filename>models/sff.php</filename>
+		<filename>models/skip.php</filename>
+		<filename>models/statistics.php</filename>
+		<filename>models/switch.php</filename>
+		<filename>models/update.php</filename>
+		<filename>mod_jpadmin/mod_jpadmin.php</filename>
+		<filename>mod_jpadmin/mod_jpadmin.xml</filename>
+		<filename>tables/exclusion.php</filename>
+		<filename>tables/inclusion.php</filename>
+		<filename>tables/profile.php</filename>
+		<filename>tables/registry.php</filename>
+		<filename>tables/statistic.php</filename>
+		<filename>views/backup/view.html.php</filename>
+		<filename>views/backup/view.raw.php</filename>
+		<filename>views/backup/tmpl/default.php</filename>
+		<filename>views/backup/tmpl/default_backup.php</filename>
+		<filename>views/backup/tmpl/default_error.php</filename>
+		<filename>views/backup/tmpl/default_finished.php</filename>
+		<filename>views/backup/tmpl/default_raw.php</filename>
+		<filename>views/backup/tmpl/default_start.php</filename>
+		<filename>views/backup/tmpl/default_step.php</filename>
+		<filename>views/browser/view.raw.php</filename>
+		<filename>views/browser/tmpl/default.php</filename>
+		<filename>views/buadmin/view.html.php</filename>
+		<filename>views/buadmin/tmpl/default.php</filename>
+		<filename>views/buadmin/tmpl/default_comment.php</filename>
+		<filename>views/buadmin/tmpl/default_restore.php</filename>
+		<filename>views/config/view.html.php</filename>
+		<filename>views/config/view.raw.php</filename>
+		<filename>views/config/tmpl/default.php</filename>
+		<filename>views/config/tmpl/default_raw.php</filename>
+		<filename>views/configeasy/view.html.php</filename>
+		<filename>views/configeasy/tmpl/default.php</filename>
+		<filename>views/cpanel/view.html.php</filename>
+		<filename>views/cpanel/tmpl/default.php</filename>
+		<filename>views/cronman/view.html.php</filename>
+		<filename>views/cronman/view.raw.php</filename>
+		<filename>views/cronman/tmpl/default.php</filename>
+		<filename>views/cronman/tmpl/default_edit.php</filename>
+		<filename>views/cronman/tmpl/default_raw.php</filename>
+		<filename>views/dbef/view.html.php</filename>
+		<filename>views/dbef/view.raw.php</filename>
+		<filename>views/dbef/tmpl/default.php</filename>
+		<filename>views/dbef/tmpl/default_raw.php</filename>
+		<filename>views/dbef/tmpl/default_tab.php</filename>
+		<filename>views/def/view.html.php</filename>
+		<filename>views/def/view.raw.php</filename>
+		<filename>views/def/tmpl/default.php</filename>
+		<filename>views/def/tmpl/default_raw.php</filename>
+		<filename>views/def/tmpl/default_tab.php</filename>
+		<filename>views/eff/view.html.php</filename>
+		<filename>views/eff/view.raw.php</filename>
+		<filename>views/eff/tmpl/default.php</filename>
+		<filename>views/eff/tmpl/default_edit.php</filename>
+		<filename>views/eff/tmpl/default_raw.php</filename>
+		<filename>views/extfilter/view.html.php</filename>
+		<filename>views/extfilter/tmpl/default_components.php</filename>
+		<filename>views/extfilter/tmpl/default_languages.php</filename>
+		<filename>views/extfilter/tmpl/default_modules.php</filename>
+		<filename>views/extfilter/tmpl/default_plugins.php</filename>
+		<filename>views/extfilter/tmpl/default_templates.php</filename>
+		<filename>views/log/view.html.php</filename>
+		<filename>views/log/view.raw.php</filename>
+		<filename>views/log/tmpl/default.php</filename>
+		<filename>views/log/tmpl/default_raw.php</filename>
+		<filename>views/multidb/view.html.php</filename>
+		<filename>views/multidb/view.raw.php</filename>
+		<filename>views/multidb/tmpl/default.php</filename>
+		<filename>views/multidb/tmpl/default_edit.php</filename>
+		<filename>views/multidb/tmpl/default_raw.php</filename>
+		<filename>views/multirestore/view.html.php</filename>
+		<filename>views/multirestore/tmpl/default.php</filename>
+		<filename>views/nag/view.html.php</filename>
+		<filename>views/nag/tmpl/default.php</filename>
+		<filename>views/profiles/view.html.php</filename>
+		<filename>views/profiles/view.raw.php</filename>
+		<filename>views/profiles/tmpl/default.php</filename>
+		<filename>views/profiles/tmpl/default_edit.php</filename>
+		<filename>views/profiles/tmpl/default_export.php</filename>
+		<filename>views/profiles/tmpl/default_import.php</filename>
+		<filename>views/sff/view.html.php</filename>
+		<filename>views/sff/view.raw.php</filename>
+		<filename>views/sff/tmpl/default.php</filename>
+		<filename>views/sff/tmpl/default_raw.php</filename>
+		<filename>views/sff/tmpl/default_tab.php</filename>
+		<filename>views/skip/view.html.php</filename>
+		<filename>views/skip/view.raw.php</filename>
+		<filename>views/skip/tmpl/default.php</filename>
+		<filename>views/skip/tmpl/default_raw.php</filename>
+		<filename>views/skip/tmpl/default_tab.php</filename>
+		<filename>views/update/view.html.php</filename>
+		<filename>views/update/tmpl/default.php</filename>
+
+		</files>
+
+		<languages folder="translations/backend">
+					<language tag="de-DE">de-DE.com_joomlapack.ini</language>
+		<language tag="de-DE">de-DE.com_joomlapack.menu.ini</language>
+		<language tag="de-DE">de-DE.mod_jpadmin.ini</language>
+		<language tag="el-GR">el-GR.com_joomlapack.ini</language>
+		<language tag="el-GR">el-GR.com_joomlapack.menu.ini</language>
+		<language tag="el-GR">el-GR.mod_jpadmin.ini</language>
+		<language tag="en-GB">en-GB.com_joomlapack.ini</language>
+		<language tag="en-GB">en-GB.com_joomlapack.menu.ini</language>
+		<language tag="en-GB">en-GB.mod_jpadmin.ini</language>
+		<language tag="es-ES">es-ES.com_joomlapack.ini</language>
+		<language tag="fr-FR">fr-FR.com_joomlapack.ini</language>
+		<language tag="fr-FR">fr-FR.com_joomlapack.menu.ini</language>
+		<language tag="fr-FR">fr-FR.mod_jpadmin.ini</language>
+		<language tag="it-IT">it-IT.com_joomlapack.ini</language>
+		<language tag="it-IT">it-IT.com_joomlapack.menu.ini</language>
+		<language tag="it-IT">it-IT.mod_jpadmin.ini</language>
+		<language tag="nb-NO">nb-NO.com_joomlapack.ini</language>
+		<language tag="nb-NO">nb-NO.com_joomlapack.menu.ini</language>
+		<language tag="nb-NO">nb-NO.mod_jpadmin.ini</language>
+		<language tag="nl-NL">nl-NL.com_joomlapack.ini</language>
+		<language tag="ro-RO">ro-RO.com_joomlapack.ini</language>
+		<language tag="ro-RO">ro-RO.com_joomlapack.menu.ini</language>
+		<language tag="ro-RO">ro-RO.mod_jpadmin.ini</language>
+		<language tag="ru-RU">ru-RU.com_joomlapack.ini</language>
+		<language tag="ru-RU">ru-RU.com_joomlapack.menu.ini</language>
+		<language tag="ru-RU">ru-RU.mod_jpadmin.ini</language>
+		<language tag="sv-SE">sv-SE.com_joomlapack.ini</language>
+		<language tag="sv-SE">sv-SE.com_joomlapack.menu.ini</language>
+		<language tag="tr-TR">tr-TR.com_joomlapack.ini</language>
+		<language tag="uk-UA">uk-UA.com_joomlapack.ini</language>
+		<language tag="uk-UA">uk-UA.com_joomlapack.menu.ini</language>
+		<language tag="uk-UA">uk-UA.mod_jpadmin.ini</language>
+
+		</languages>
+
+	</administration>
+
+	<installfile>install.joomlapack.php</installfile>
+	<uninstallfile>uninstall.joomlapack.php</uninstallfile>
+</install>

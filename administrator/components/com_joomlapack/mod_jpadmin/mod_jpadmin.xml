@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install version="1.5.0" type="module" client="administrator"
+	method="upgrade">
+	<name>JoomlaPack Backup Notification Module</name>
+	<author>Nicholas K. Dionysopoulos</author>
+	<authorEmail>nicholas@joomlapack.net</authorEmail>
+	<authorUrl>http://www.joomlapack.net</authorUrl>
+	<creationDate>May 2009</creationDate>
+	<copyright>Copyright (c)2009 Nicholas K. Dionysopoulos /
+		JoomlaPack Developers</copyright>
+	<license>GNU GPL v3</license>
+	<version>1.0</version>
+	<description><![CDATA[
+	<hr />
+	<h1>JoomlaPack Backup Notification Module</h1>
+	<p>This is a handy  module to display a JoomlaPack icon on your administrator
+	back-end's Control Panel page. The icon displays a warning site if the last
+	backup is failed, or if you haven't backed up your site for a period of time
+	(user-defined). Clicking it brings you to the JoomlaPack &quot;Backup Now&quot;
+	page.</p>
+	<p><strong>Important!</strong> You have to <em>manually</em> enable this module.
+	Go to Extensions, Module Manager and click the Administrator link (<u>not</u>
+	the Site link). Set the position to &quot;icon&quot;, enable this module
+	and you're set!</p>
+	<hr />
+	]]></description>
+	<files>
+		<filename module="mod_jpadmin">mod_jpadmin.php</filename>
+	</files>
+	<params>
+		<param name="enablewarning" type="radio" label="LBL_WARNINGS"
+			description="DESC_WARNINGS">
+			<option value="0">LBL_YES</option>
+			<option value="1">LBL_NO</option>
+		</param>
+		<param name="warnfailed" type="radio" label="LBL_WARNFAILED"
+			description="DESC_WARNFAILED">
+			<option value="0">LBL_YES</option>
+			<option value="1">LBL_NO</option>
+		</param>
+		<param name="maxbackupperiod" type="text" label="LBL_PERIOD"
+			description="DESC_PERIOD" size="5" />
+	</params>
+</install>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>ccNewsletter Module</name>
+	<author>Chill Creations</author>
+	<creationDate>July 2009</creationDate>
+	<authorEmail>info@chillcreations.com</authorEmail>
+	<authorUrl>http://www.chillcreations.com</authorUrl>
+	<version>1.0.4 Stable</version>
+	<description>This provides a quick portable opt-in form for the ccNewsletter component.</description>
+	<files>
+		<filename module="mod_ccnewsletter">mod_ccnewsletter.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>article.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<folder>assets/</folder>
+	</files>
+	<params addpath="/modules/mod_ccnewsletter">
+		<param name="style" type="radio" default="mootools" label="Type of effect" description="(Simple) : boring normal module. (Mootools) : using Mootools.net library.(Highslide) : Highslide is free for non-commercial sites but costs $30 per commercial site. Please go to http://vikjavev.no/highslide to obtain a permission.">
+			<option value="mootools">Mootools</option>
+			<option value="highslide">High Slide</option>
+			<option value="simple">Normal</option>
+		</param>
+		<param name="introduction" type="textarea" rows="5" cols="35" default="" label="Introduction" description="The line of text printed above the newsletter sign up form" />
+		<param name="lname" type="text" default="Name" size="35" label="Name" description="Lable text for Name" />
+		<param name="lemail" type="text" default="Email" size="35" label="Email" description="Lable text for Email" />
+		<param name="lsubscribe" type="text" default="Subscribe" size="35" label="Subscribe" description="Button text for Suscribe" />
+		<param name="lunsubscribe" type="text" default="UnSubscribe" size="35" label="UnSubscribe" description="Button text for Unsuscribe" />
+		<param name="lmove" type="text" default="Move" size="35" label="Move" description="High Slide Move link text" />
+		<param name="lclose" type="text" default="Close" size="35" label="Close" description="High Slide Close link text" />
+		<param name="namewarning" type="text" default="Enter your name!!" size="35" label="Name warning message" description="Warning message for empty name validation" />
+		<param name="emailwarning" type="text" default="Enter the valid email!!" size="35" label="Email warning message" description="Warning message for email validation" />
+		<param name="terms_cond_warn" type="text" default="Check the Terms and condition!!" size="35" label="Terms and conition warning message" description="Warning message for Terms and condition validation" />
+		<param name="unsubscribe_button" type="radio" default="0" label="Show unSubscribe" description="Show unSubscribe">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+
+		<param name="showterm" type="radio" default="0" label="Show Terms and Condition" description="Show unSubscribe">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+
+		<param name="showterm_text" type="text" default="Terms and condition" size="35" label="Terms and condition" description="Lable text for Name" />
+		<param name="id" type="article" default="0" label="Select Article" description="An article" />
+
+	</params>
+
+
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+</install>

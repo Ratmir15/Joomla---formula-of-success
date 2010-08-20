@@ -1,0 +1,27 @@
+<?php
+$mtwCFG['hostname'] = "localhost";
+$mtwCFG['dbname'] = "";
+$mtwCFG['username'] = "";
+$mtwCFG['password'] = "";
+$mtwCFG['prefix'] = "jos_";
+$mtwCFG['ext_cb'] = "0";
+$mtwCFG['ext_vm'] = "0";
+$mtwCFG['ext_jc'] = "0";
+$mtwCFG['ext_dm'] = "0";
+$mtwCFG['ext_ff'] = "0";
+$mtwCFG['ext_aj'] = "0";
+$mtwCFG['ext_fb'] = "0";
+$mtwCFG['ext_ku'] = "0";
+$mtwCFG['backup'] = "1";
+$mtwCFG['groups'] = "1";
+$mtwCFG['users'] = "1";
+$mtwCFG['sections'] = "1";
+$mtwCFG['categories'] = "1";
+$mtwCFG['content'] = "1";
+$mtwCFG['frontpage'] = "1";
+$mtwCFG['menus'] = "1";
+$mtwCFG['modules'] = "1";
+$mtwCFG['polls'] = "1";
+$mtwCFG['weblinks'] = "1";
+$mtwCFG['contacts'] = "1";
+?>

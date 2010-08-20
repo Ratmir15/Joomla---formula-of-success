@@ -1,0 +1,77 @@
+/* Newsletter module common css */
+.mainnewsletter {
+	width:100%;
+	font-family:Arial;
+	font-size:14px;
+	color:#000000;
+	font-weight:bold;
+	text-align:center;
+/*	border:1px solid red;*/
+}
+.mainnewsletter p {
+	text-align:center;
+}
+.newsletterbutton {
+	/*width:100%;*/
+	border:5px solid #000000;
+	font-weight:bold;
+	text-align:center;
+	padding-top:5px;
+}
+.newsletterbutton p  {
+	text-align:center;
+}
+.newsletterbutton a#toggle, .newsletterbutton p a.highslide{
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+}
+
+/* highslide*/
+.newsletterbutton_highslide {
+	/*width:100%;*/
+	border:0px solid #000000;
+	font-weight:bold;
+	text-align:center;
+	padding-top:5px;
+}
+.newsletterbutton_highslide p  {
+	text-align:center;
+}
+.newsletterbutton_highslide a#toggle, .newsletterbutton_highslide p a.highslide{
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+}
+
+/* Mootols style */
+#subscribelayout {
+	background: #FFFFFF;
+	color: #92939D;
+	font-size:12px;
+	font-weight:normal;
+	/*margin-top:5px;*/
+	padding-top:10px;
+	border-bottom: 2px solid #000000;
+	border-left: 2px solid #000000;
+	border-right: 2px solid #000000;
+}
+#subscribelayout p, .highslide-body p, .normalsublayout p{
+	text-align:center;
+	padding-top:10px;
+	font-weight:bold;
+}
+.highslide-body p{
+	color: #92939D;
+}
+
+/* Normal style */
+.normalsublayout {
+	background: #FFFFFF;
+	color: #92939D;
+	font-size:12px;
+	font-weight:normal;
+	margin-top:5px;
+	padding-top:10px;
+	border: none;
+}

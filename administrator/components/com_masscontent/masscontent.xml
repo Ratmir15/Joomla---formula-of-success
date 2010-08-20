@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+  <name>masscontent</name>
+  <author>Johann Eriksen</author>
+  <creationDate>04.10.2009</creationDate>
+  <copyright>GNU/GPL</copyright>
+  <authorEmail>johann@baticore.com</authorEmail>
+  <authorUrl>http://www.baticore.com</authorUrl>
+  <version>1.5</version>
+  <description>Create Mass Content</description>
+
+
+  
+  <administration>
+    <menu>Mass content</menu>
+    <submenu>
+       <menu controller="content">Create mass content</menu>
+       <menu controller="sections">Create mass sections</menu>
+       <menu controller="categories">Create mass categories</menu>
+       <menu controller="delete">Delete mass content</menu>
+    </submenu>
+    <files folder="admin">
+      	<filename>controller.php</filename>
+      	<filename>admin.masscontent.php</filename>
+      	<filename>config.xml</filename>
+		<filename>views/index.html</filename>
+		<filename>views/content/index.html</filename>
+		<filename>views/content/view.html.php</filename>
+		<filename>views/content/tmpl/index.html</filename>
+		<filename>views/content/tmpl/default.php</filename>
+		<filename>views/delete/index.html</filename>
+		<filename>views/delete/view.html.php</filename>
+		<filename>views/delete/tmpl/index.html</filename>
+		<filename>views/delete/tmpl/default.php</filename>
+		<filename>views/sections/index.html</filename>
+		<filename>views/sections/view.html.php</filename>
+		<filename>views/sections/tmpl/index.html</filename>
+		<filename>views/sections/tmpl/default.php</filename>
+		<filename>views/categories/index.html</filename>
+		<filename>views/categories/view.html.php</filename>
+		<filename>views/categories/tmpl/index.html</filename>
+		<filename>views/categories/tmpl/default.php</filename>		
+		<filename>tables/index.html</filename>
+		<filename>tables/content.php</filename>
+		<filename>tables/sections.php</filename>
+		<filename>tables/categories.php</filename>
+		<filename>models/index.html</filename>
+		<filename>models/content.php</filename>
+		<filename>models/delete.php</filename>
+		<filename>models/sections.php</filename>
+		<filename>models/categories.php</filename>	  
+		<filename>controllers/index.html</filename>
+		<filename>controllers/content.php</filename>
+		<filename>controllers/delete.php</filename>
+		<filename>controllers/sections.php</filename>
+		<filename>controllers/categories.php</filename>	 
+    </files>    
+    <languages>	
+	<language tag="en-GB">languages/admin/en-GB.com_masscontent.ini</language>
+     </languages>
+  </administration>
+  
+      <params>
+		<param name="nbMassContent" type="text" size="5" default="10" label="PARAMNBMASSCONTENT" description="PARAMNBMASSCONTENT">
+		</param>	
+		<param name="nbMassCategories" type="text" size="5" default="10" label="PARAMNBMASSCATEGORIES" description="PARAMNBMASSCATEGORIES">
+		</param>		
+		<param name="nbMassSections" type="text" size="5" default="10" label="PARAMNBMASSSECTIONS" description="PARAMNBMASSSECTIONS">
+		</param>		
+        <param name="displayWysiwyg" type="radio" default="0" label="PARAMDISPLAYWYSIWYGr" description="PARAMDISPLAYWYSIWYGr">
+	    <option value="0">Hide</option>
+	    <option value="1">Show for 1st content</option>
+	    <option value="2">Show for all contents</option>
+	</param>
+	<param name="displayAlias" type="radio" default="1" label="PARAMDISPLAYALIAS" description="PARAMDISPLAYALIAS">
+	    <option value="0">Hide</option>
+	    <option value="1">Show</option>
+	</param>	
+	<param name="displayIntroText" type="radio" default="1" label="PARAMDISPLAYINTROTEXT" description="PARAMDISPLAYINTROTEXT">
+	    <option value="0">Hide</option>
+	    <option value="1">Show</option>
+	</param>
+	<param name="displayFullText" type="radio" default="1" label="PARAMDISPLAYFULLTEXT" description="PARAMDISPLAYFULLTEXT">
+	    <option value="0">Hide</option>
+	    <option value="1">Show</option>
+	</param>
+	<param name="displayMetaDescription" type="radio" default="0" label="PARAMDISPLAYMETADESCRIPTION" description="PARAMDISPLAYMETADESCRIPTION">
+	    <option value="0">Hide</option>
+	    <option value="1">Show</option>
+	</param>
+	<param name="displayMetaKeywords" type="radio" default="0" label="PARAMDISPLAYMETAKEYWORDS" description="PARAMDISPLAYMETAKEYWORDS">
+	    <option value="0">Hide</option>
+	    <option value="1">Show</option>
+	</param>	
+	<param name="displayMetaRobots" type="radio" default="0" label="PARAMDISPLAYMETAROBOTS" description="PARAMDISPLAYMETAROBOTS">
+	    <option value="0">Hide</option>
+	    <option value="1">Show</option>
+	</param>	
+	<param name="displayMetaAuthor" type="radio" default="0" label="PARAMDISPLAYMETAAUTHOR" description="PARAMDISPLAYMETAAUTHOR">
+	    <option value="0">Hide</option>
+	    <option value="1">Show</option>
+	</param>		
+    </params>
+  
+</install>
